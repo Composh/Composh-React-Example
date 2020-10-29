@@ -8,7 +8,9 @@ import {
 
 // Styled Component Common Import
 import {
+  Chip,
   Container,
+  Icon,
   Title,
   Toolbar
 } from 'react-composh';
@@ -42,8 +44,8 @@ const ChipScreen: React.FC = () => {
       />
 
 
-      <View>
 
+      <View>
 
         <View>
 
@@ -55,17 +57,34 @@ const ChipScreen: React.FC = () => {
             flexDirection: 'row',
           }}>
 
-            <Text>
-              Default
-            </Text>
+            <Chip
+              disabled
+              title={'Default'}
+              backgroundColor={'gray'}
+              unselectedColor={'white'}
+            />
 
-            <Text>
-              Icon
-            </Text>
+            <Chip
+              disabled
+              thumb={
+                <Icon
+                  type={'ionicon'}
+                  name={'md-trash'}
+                  size={24}
+                  color="black"
+                />
+              }
+              title={'Icon'}
+              backgroundColor={'gray'}
+              unselectedColor={'white'}
+            />
 
-            <Text>
-              Avatar
-            </Text>
+            <Chip
+              disabled
+              title={'Avatar'}
+              backgroundColor={'gray'}
+              unselectedColor={'white'}
+            />
 
           </View>
 
@@ -73,6 +92,49 @@ const ChipScreen: React.FC = () => {
 
 
 
+        <View>
+
+          <Text>
+            Select
+          </Text>
+
+          <View style={{
+            flexDirection: 'row',
+          }}>
+
+            <Chip
+              selected
+              title={'Default'}
+              backgroundColor={'gray'}
+              selectedColor={'yellow'}
+              unselectedColor={'white'}
+            />
+
+            <Chip
+              selected
+              thumb={
+                <Icon
+                  type={'ionicon'}
+                  name={'md-trash'}
+                  size={24}
+                  color="black"
+                />
+              }
+              title={'Icon'}
+              backgroundColor={'gray'}
+              unselectedColor={'white'}
+            />
+
+            <Chip
+              selected
+              title={'Avatar'}
+              backgroundColor={'gray'}
+              unselectedColor={'white'}
+            />
+
+          </View>
+
+        </View>
 
 
 
@@ -86,24 +148,27 @@ const ChipScreen: React.FC = () => {
             flexDirection: 'row',
           }}>
 
-            <Text>
-              Red
-            </Text>
+            <Chip
+              title={'Red'}
+              backgroundColor={'red'}
+              unselectedColor={'white'}
+            />
 
-            <Text>
-              Green
-            </Text>
+            <Chip
+              title={'Green'}
+              backgroundColor={'green'}
+              unselectedColor={'white'}
+            />
 
-            <Text>
-              Darkblue
-            </Text>
+            <Chip
+              title={'Blue'}
+              backgroundColor={'blue'}
+              unselectedColor={'white'}
+            />
 
           </View>
 
         </View>
-
-
-
 
 
 
@@ -117,24 +182,27 @@ const ChipScreen: React.FC = () => {
             flexDirection: 'row',
           }}>
 
-            <Text>
-              Red
-            </Text>
+            <Chip
+              title={'Red'}
+              backgroundColor={'red'}
+              unselectedColor={'white'}
+            />
 
-            <Text>
-              Green
-            </Text>
+            <Chip
+              title={'Green'}
+              backgroundColor={'green'}
+              unselectedColor={'white'}
+            />
 
-            <Text>
-              Darkblue
-            </Text>
+            <Chip
+              title={'Blue'}
+              backgroundColor={'blue'}
+              unselectedColor={'white'}
+            />
 
           </View>
 
         </View>
-
-
-
 
 
 
@@ -148,24 +216,55 @@ const ChipScreen: React.FC = () => {
             flexDirection: 'row',
           }}>
 
-            <Text>
-              Home
-            </Text>
+            <Chip
+              disabled
+              thumb={
+                <Icon
+                  type={'ionicon'}
+                  name={'md-home'}
+                  size={24}
+                  color="white"
+                />
+              }
+              title={'Home'}
+              backgroundColor={'gray'}
+              unselectedColor={'white'}
+            />
 
-            <Text>
-              Camera
-            </Text>
+            <Chip
+              selected
+              thumb={
+                <Icon
+                  type={'ionicon'}
+                  name={'md-camera'}
+                  size={24}
+                  color="white"
+                />
+              }
+              title={'Home'}
+              backgroundColor={'gray'}
+              selectedColor={'white'}
+            />
 
-            <Text>
-              User
-            </Text>
+            <Chip
+              selected
+              disabled
+              thumb={
+                <Icon
+                  type={'ionicon'}
+                  name={'md-settings'}
+                  size={22}
+                  color="white"
+                />
+              }
+              title={'Settings'}
+              backgroundColor={'gray'}
+              selectedColor={'white'}
+            />
 
           </View>
 
         </View>
-
-
-
 
 
 
@@ -179,28 +278,57 @@ const ChipScreen: React.FC = () => {
             flexDirection: 'row',
           }}>
 
-            <Text>
-              Andy
-            </Text>
+            <Chip
+              disabled
+              thumb={
+                <Icon
+                  type={'ionicon'}
+                  name={'md-home'}
+                  size={24}
+                  color="white"
+                />
+              }
+              title={'Andy'}
+              backgroundColor={'gray'}
+              unselectedColor={'white'}
+            />
 
-            <Text>
-              Martin
-            </Text>
+            <Chip
+              selected
+              thumb={
+                <Icon
+                  type={'ionicon'}
+                  name={'md-camera'}
+                  size={24}
+                  color="white"
+                />
+              }
+              title={'Melissa'}
+              backgroundColor={'gray'}
+              selectedColor={'white'}
+            />
 
-            <Text>
-              Carla
-            </Text>
+            <Chip
+              selected
+              disabled
+              thumb={
+                <Icon
+                  type={'ionicon'}
+                  name={'md-settings'}
+                  size={22}
+                  color="white"
+                />
+              }
+              title={'Jonny'}
+              backgroundColor={'gray'}
+              selectedColor={'white'}
+            />
 
           </View>
 
         </View>
 
-
-
-
       </View>
-
-
 
     </Container>
 
